@@ -1,0 +1,229 @@
+#item{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 230px;
+    .clothing_item{
+        display: inline-block;
+        float:left;
+        margin-bottom: 60px;
+
+        .item_gallery{
+            width:35%;
+
+            .item_mainView{
+                width:100%;border:1px solid gray;border-radius:3px;
+            }
+
+            .slider {
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                border:1px solid gray;/*border-radius:10px;*/
+            }
+
+            .holder {
+                width: 300%;
+                max-height: 100vw;
+                height: 100%;
+                overflow-y: hidden;
+                z-index: 1 !important;
+
+                .slide-wrapper {
+                    width: 33.31%;
+                    height: 100%;
+                    float: left;
+                    position: relative;
+                    overflow: hidden;
+                    color: white;
+                    font-size: 2em;
+
+                    .slide {
+                        height: 100%;
+                        position: relative;
+
+                        img {
+                            /*    position: absolute;*/
+                            z-index: 0;
+                            transform: translatex(-0px);
+                            width: 100%;
+                            height: 100%;
+                            margin-top: 0px !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        .input_s2{
+            border: 1px solid gray;
+            border-radius: 5px;
+            width: 25%;
+        }
+
+        .add_to_cart{
+            display: block;
+            font-size: 15px;
+            font-family: 'Raleway',
+            sans-serif;
+            font-weight: 800;
+            color: #FFFFFF;
+            background-color: rgba(128,128,128,0.1);
+            width: 200px;
+            text-align: center;
+            padding: 5px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        .price{
+            font-family: 'Raleway',
+            sans-serif;
+            font-weight: 600;
+            color: #13bb58;
+            text-transform: uppercase;
+            text-align: center;
+            display: block;
+        }
+
+        .info{
+            font-family: 'Raleway', sans-serif;
+            margin-left: 20px;
+            text-align: center;
+            width: 62%;
+
+            >button{
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+
+    #recommendations{
+        .itemBox_s{
+            width: 170px;
+            height: auto;
+            text-align: center;
+            border: 1px solid silver;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 5px 3px 0 0;
+            padding-bottom: 15px;
+
+            .adImages{
+                width: 110px !important;
+                height: 110px !important;
+                max-width: 244px;
+                display: block;
+                margin-top: 10px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+}
+
+
+// Extra small devices (portrait phones, less than 576px)
+@include media-breakpoint-only(xs) {
+    #item{
+        .clothing_item{
+            .item_gallery {
+                width: 100%;
+            }
+            .info{
+                width: 100%;
+            }
+        }
+        #recommendations{
+            .itemBox_s{
+                width: 48%;
+            }
+        }
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@include media-breakpoint-only(sm) {
+    #item{
+        margin-top: 250px !important;
+        .clothing_item{
+            .item_gallery {
+                width: 100%;
+            }
+            .info{
+                width: 100%;
+            }
+        }
+        #recommendations{
+            .itemBox_s{
+                width: 32%;
+            }
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@include media-breakpoint-only(md){
+    #item{
+        margin-top: 250px !important;
+
+        .clothing_item{
+            .item_gallery {
+                width: 42%;
+            }
+            .info{
+                width: 50%;
+            }
+        }
+
+        #recommendations{
+            .itemBox_s{
+                width: 24%;
+            }
+        }
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@include media-breakpoint-only(lg) {
+    #item{
+        margin-top: 200px !important;
+
+        .clothing_item{
+            .item_gallery {
+                width:35%;
+            }
+            .info{
+                width: 62%;
+            }
+        }
+
+        #recommendations{
+            .itemBox_s{
+                width: 24%;
+            }
+        }
+    }
+}
+// Extra large devices (large desktops, 1600px and up)
+@include media-breakpoint-only(xl) {
+    #item{
+        margin-top: 200px !important;
+
+        .clothing_item{
+            .item_gallery {
+                width:35%;
+            }
+            .info{
+                width: 62%;
+            }
+        }
+
+        #recommendations{
+            .itemBox_s{
+                width: 24%;
+            }
+        }
+    }
+}

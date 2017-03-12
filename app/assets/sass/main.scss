@@ -1,0 +1,139 @@
+@import "./variables";
+
+body {
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}
+
+*:focus {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color:$link-color;
+  &:hover{text-decoration: underline;}
+}
+
+h1>a {
+  text-decoration: none;
+  color: $body-bg;
+  &:hover {text-decoration: none;}
+}
+.center {
+  margin-left:auto;
+  margin-right:auto;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.table {
+  display: table;
+}
+.button {
+  color: #fff;
+  background-color: #428bca;
+  border-radius: 4px;
+  padding: 5px 10px;
+  text-decoration: none;
+  cursor: pointer;
+  border:0;
+}
+
+h2{
+  font-size: 18px;
+  font-family: 'Raleway',
+  sans-serif;
+  font-weight: 800;
+  margin-left: 15px;
+  text-transform: uppercase;
+}
+h3, h4{
+  font-family: 'Raleway',
+  sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+h3>a{
+  color: #000000;
+}
+h4>a{
+  color: red;
+}
+h3>a:hover, h4>a:hover{
+  text-decoration: none;
+}
+.d-ib{
+  display: inline-block;
+  padding-bottom:5px;
+}
+.t-lc{
+  width:200px; display:inline-flex;
+}
+.t-rc{
+  width: 300px; margin-left:10px;
+}
+.backButton{
+  display:block; margin-top:25px; border-radius:5px; cursor: pointer;
+}
+.animate { transition: transform 0.3s ease-out; }
+
+.ms-touch.slider {
+  overflow-x: scroll;
+  overflow-y: hidden;
+
+  -ms-overflow-style: none;
+  /* Hides the scrollbar. */
+
+  -ms-scroll-chaining: none;
+  /* Prevents Metro from swiping to the next tab or app. */
+
+  -ms-scroll-snap-type: mandatory;
+  /* Forces a snap scroll behavior on your images. */
+
+  -ms-scroll-snap-points-x: snapInterval(0%, 100%);
+  /* Defines the y and x intervals to snap to when scrolling. */
+}
+
+#maincontainer {
+  height: auto;
+  //position: absolute;
+}
+
+// Extra small devices (portrait phones, less than 576px)
+// Small devices (landscape phones, 576px and up)
+@include media-breakpoint-between(xs, sm) {
+  #maincontainer {
+    width: 100%;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@include media-breakpoint-only(md){
+  #maincontainer {
+    width: 100%;
+    min-width: 768px;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@include media-breakpoint-only(lg) {
+  #maincontainer {
+    width: 100%;
+    min-width: 800px;
+    .center{margin-right:0;}
+  }
+}
+
+// Extra large devices (large desktops, 1600px and up)
+@media (min-width: 1600px) {
+  #maincontainer {
+    width: 100%;
+  }
+}

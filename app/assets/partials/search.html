@@ -1,0 +1,17 @@
+<ng-include src="'assets/partials/navbar.html'"></ng-include>
+
+<div id="search" class="content" style="margin-top: 100px;">
+	<button class="backButton" ng-click="$back()">Back to previous page</button>
+	<h2>Showing results for: {{searchQuery}}</h2>
+	<div ng-repeat="items in searchResult" style="border:1px solid black; ">
+		<div class="clothing_item itemBox" ng-repeat="item in items">
+			<a href="/item/{{item.Id}}"><img class="clothing" ng-src="{{item.imageUrl}}"/></a>
+			<div class="itemBox-i">
+				<strong><a href="/item/{{item.Id}}">{{item.Name | shorten}}<a></strong>
+				<a href="/item/{{item.Id}}" class="button fr" style="margin-top:15px;border-top-left-radius:15px;border-bottom-left-radius:15px;">Shop now<a>
+				</br>
+				<h4><a href="/item/{{item.Id}}">{{item.Price}} SEK</a></h4>
+			</div>
+		</div>
+	</div>
+</div>

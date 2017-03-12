@@ -1,0 +1,28 @@
+#profile{
+    margin-bottom: 50px;
+    margin-top: 230px;
+
+    >table{
+        margin-left: 20%;
+
+        th {
+            background-color: rgb(144, 245, 255);
+        }
+
+        td {
+            background-color: rgba(144, 210, 210, 0.26);
+            padding: 10px 30px 10px 30px;
+        }
+    }
+    table.center{
+        th {
+          background-color: rgb(255, 144, 144);
+          padding: 5px 15px 5px 15px;
+        }
+
+        td {
+          background-color: rgba(255, 144, 144, 0.2);
+          padding: 3px 10px 3px 10px;
+        }
+    }
+}

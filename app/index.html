@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- Notice the ng-app Angular directive. This tells Angular where the application starts and also
+which module to associate the app with. In app.js we create the "dinnerPlanner" module. -->
+<html lang="en" ng-app="onlineClothingStore" ng-controller="AppCtrl" ng-strict-di>
+    <head>
+        <title>Online Clothing Store</title>
+        <base href="/">
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="assets/images/logo1.jpg"/>
+        <link rel="stylesheet" type="text/css" href="assets/css/dinner-planner.min.css">
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" href="/assets/images/favicon/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="/assets/images/favicon/favicon-16x16.png" sizes="16x16">
+        <link rel="manifest" href="/assets/images/favicon/manifest.json">
+        <link rel="mask-icon" href="/assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="/assets/images/favicon/favicon.ico">
+        <meta name="msapplication-config" content="/assets/images/favicon/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+
+    </head>
+    <body>
+        <!-- Here in index.html you should put only the layout that is shared among all the screens (e.g. header
+        ,footer, etc.). The rest of the view specific layout will go into the html partials (check partials folder) -->
+
+        <!-- ng-view Angular directive is where the partials will be loaded. app.js configures the $routingProvider
+        where you specify which partial should be loaded when. -->
+        <div ng-view id="maincontainer" class="center"></div>
+
+        <!-- Bootstrap CSS -->
+        <!-- <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"> -->
+        <!-- jQuery -->
+        <script src="bower_components/jquery/dist/jquery.js"></script>
+        <!-- Bootstrap JavaScript, needed if you want for instance tabs, models, popovers etc. -->
+        <!-- <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script> -->
+        <!-- Angular JavaScript including routing and resource modules  -->
+        <script src="bower_components/angular/angular.js"></script>
+        <script src="bower_components/angular-route/angular-route.js"></script>
+        <script src="bower_components/angular-resource/angular-resource.js"></script>
+        <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+
+        <!-- The application JavaScript code -->
+        <script src="assets/js/dinner-planner.min.js"></script>
+
+        <!-- Install the Firebase JavaScript library -->
+        <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+    </body>
+</html>

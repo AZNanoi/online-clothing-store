@@ -1,0 +1,530 @@
+/*#header>h1{
+	color: #FFFFFF; 
+	font-family: 'Raleway',
+	sans-serif; 
+	font-size: 40px; 
+	font-weight: 800; 
+	line-height: 72px; 
+	margin: 0 0 0 3%; 
+	text-transform: uppercase;
+	display: inline-block;
+}*/
+.maincontainer {
+	width: 1000px;
+	height: auto;
+	margin-top:150px;
+}
+*:focus {
+    outline: none;
+}
+a{
+	text-decoration: none;
+	color:#428bca;
+}
+a:hover{
+	text-decoration: underline;
+}
+h1>a{
+	text-decoration: none;
+	color:#FFFFFF;
+}
+h1>a:hover{
+	text-decoration: none;
+}
+
+.centerContent {
+	text-align:center;
+}
+.center {
+	margin-left:auto; 
+    margin-right:auto;
+}
+.logo {
+	height:110px; width:auto;
+}
+table input {
+	width: 99%;
+}
+table th {
+	background-color: #9E9E9E;
+	padding: 10px 15px 10px 15px;
+}
+
+table td {
+	background-color: rgba(158, 158, 158, 0.26);
+	padding: 0px 10px 0px 10px;
+	border-radius: 3px;
+}
+#editAccount table td {
+	background-color: rgba(158, 158, 158, 0);
+}
+#profile>table{
+	margin-left: 20%;
+}
+#profile>table th {
+	background-color: rgb(144, 245, 255);
+}
+#profile>table td {
+	background-color: rgba(144, 210, 210, 0.26);
+	padding: 10px 30px 10px 30px;
+}
+#cart table th {
+	background-color: rgb(255, 185, 144);
+}
+#cart table td {
+	background-color: rgba(247, 224, 188, 0.32);
+}
+#profile table.center th {
+	background-color: rgb(255, 144, 144);
+	padding: 5px 15px 5px 15px;
+}
+#profile table.center td {
+	background-color: rgba(255, 144, 144, 0.2);
+	padding: 3px 10px 3px 10px;
+}
+input#userInfo {
+	background-color: rgba(255, 144, 144, 0.2);
+	padding: 3px 2px 3px 2px;
+	width:300px;
+	height: 20px;
+	border-radius: 5px;
+}
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+.table {
+	display: table;
+}
+.button {
+	color: #fff;
+    background-color: #428bca;
+    border-radius: 4px;
+    padding: 5px 10px;
+    text-decoration: none;
+    cursor: pointer;
+    border:0;
+}
+#header{
+	height: 80px;
+	background-color: #23B9DB;
+	left:0;
+	right:0;
+	top:0;
+	position:fixed;
+}
+.header_c{
+	width: 1000px;
+	height: auto;
+}
+.headerMenuBar{
+	float: right;
+	position: relative;
+	margin: 0;
+}
+.shopping_cart{
+	display:inline-block;
+	background-image: url("images/shopping-cart2.png");
+	background-repeat: no-repeat;
+	background-position: 0px 10px;
+	height: 40px;
+	width: 30px;
+}
+#search_input{
+	margin-left: 100px;
+	margin-top: 23px;
+	display: inline-block;
+	vertical-align: top;
+}
+#search_input>input{
+	height:26px; border-top-left-radius:10px; border-bottom-left-radius:10px; padding-left:5px;
+	width: 300px;
+	top:0;
+	border:1px solid gray;
+}
+#search_input>button{
+	margin-left: 0px;
+	width: 60px;
+	height: 30px;
+	margin: 0;
+	padding: 0;
+	vertical-align: top;
+	border:1px solid gray;
+	background-color:white;
+	border-top-right-radius:10px;
+	border-bottom-right-radius:10px;
+	cursor: pointer;
+}
+#search_input>button>img{
+	height: 25px;
+	width: 25px;
+}
+/*#searchButton{
+	background-color:white;
+	border-top-right-radius:10px;
+	border-bottom-right-radius:10px;
+	border:0px;
+	cursor: pointer;
+}*/
+#header a{
+	top:0;
+	display: inline-block;
+	margin-right: 25px;
+	margin-top: 25px;
+	color: #FFFFFF; 
+	font-family: 'Raleway',
+	sans-serif;
+	font-size: 12px;
+	font-weight: 800;
+	text-decoration: none;
+    text-transform: uppercase;
+}
+
+.categories{
+	width: 100%;
+	float: left;
+	padding-bottom: 20px;
+}
+ul.category_list {
+	width: 1100px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li>a:link, li>a:visited {
+	float:left;
+	border-radius: 10px;
+    font-size: 13px; 
+    font-family: 'Raleway',
+	sans-serif; 
+	font-weight: 800;
+    color: #FFFFFF;
+    background-color: gray;
+    width: 140px;
+    text-align: center;
+    padding: 8px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border:1px solid white;
+}
+li>a:hover, li>a:active, li>a:focus{
+    background-color: black;
+}
+div.content {
+	/*display: inline-block;
+	float: left;
+	margin-left: 0;
+	margin-top: 0;*/
+}
+h2{
+	font-size: 18px; 
+    font-family: 'Raleway',
+	sans-serif; 
+	font-weight: 800;
+    margin-left: 15px;
+    text-transform: uppercase;
+}
+/*.featured>div{
+	display: inline-block;
+	float: left;
+	width: 200px;
+	overflow: hidden;
+}*/
+h3, h4{
+	font-family: 'Raleway',
+	sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+h3>a{
+	color: #000000;
+}
+h4>a{
+	color: red;
+}
+h3>a:hover, h4>a:hover{
+	text-decoration: none;
+}
+img.clothing{
+	width:244px;
+	max-width:244px;
+	height:300px;
+	display: block;
+	margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.price{
+	font-family: 'Raleway',
+	sans-serif;
+	font-weight: 600;
+	color: red;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+}
+.add_to_cart{
+ 	display: block;
+ 	font-size: 15px; 
+ 	font-family: 'Raleway',
+ 	sans-serif; 
+	font-weight: 800;
+	color: #FFFFFF;
+	background-color: rgba(128,128,128,0.1);
+    width: 200px;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.clothing_item{
+ 	display: inline-block;
+ 	float:left;
+}
+/*.clothing_item>img{
+	width:300px; 
+	height:400px;
+	display: block;
+	margin-top: 10px;
+	float:left;
+}*/
+.sn_button{
+	margin-top:15px;/*border-top-left-radius:15px;*/border-bottom-left-radius:15px;
+}
+.itemsContent{border-top:1px solid black;overflow: hidden;padding-bottom: 50px;}
+.info{
+	font-family: 'Raleway',
+	sans-serif;
+}
+.info>button{
+	margin-left: auto;
+	margin-right: auto;
+}
+#slideShow {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	border: 1px solid black;
+	padding: 10px 0 10px 0;
+	text-align: center;
+	margin-top: 20px;
+	border-radius: 10px;
+}
+#slideShow>img{width:auto; height:270px;}
+.roundButton{
+	font-size: 50px;
+	border-radius: 50px;
+	width: 100px;
+	height:100px;
+	border:1px solid rgba(177,177,177,0.5);
+	cursor: pointer;
+	margin-top: -18%;
+}
+@keyframes drawLeft{
+	from {
+		margin-left: -100px;
+	} to {
+		margin-left: -50px;
+	}
+}
+@keyframes drawRight{
+	from {
+		margin-right: -100px;
+	} to {
+		margin-right: -50px;
+	}
+}
+.leftarrow{
+	float:left;
+	margin-left: -50px;
+	padding-left: 40px;
+	animation: 0.5s drawLeft;
+}
+.rightarrow{
+	float:right;
+	margin-right: -50px;
+	padding-right: 40px;
+	animation: 0.5s drawRight;
+}
+#search-input-frame{
+	display: block;
+	background-color: rgba(0, 0, 0, 0);
+}
+#search-input-frame>div{
+	border: 1px solid gray;
+    border-radius: 5px;
+    background-color: rgba(222, 253, 255, 0.9);
+    padding: 5px;
+    font-size: 1.1em;
+    overflow: hidden;
+    position: relative;
+}
+#search-input-frame>div img{
+	width: 100px;
+	height: 100px;
+}
+a.searchResult{
+    color: #001eb7 !important;
+    font-family: Arial, Helvetica serif !important;
+    font-weight: 400 !important;
+    text-transform: none !important;
+    margin-top: 0px !important;
+}
+#dropdownMenu{
+	background-color: rgba(192, 195, 196, 0.9);
+    width: 150px;
+    height: 200px;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-top: 60px;
+    z-index: 1;
+    position: absolute;
+    width: 210px;
+}
+#dropdownMenu>a{
+	font-weight: 100;
+	margin-right: 10px;
+	color:black;
+	text-transform: capitalize; 
+}
+#dMenu-icon{
+	background-image: url("images/menu-icon.png");
+	width: 25px;
+	height: 25px;
+	margin-top: 20px;
+	background-size: 25px 25px;
+	margin-right: 4px;
+}
+#dMenu-icon:hover{
+	background-image: url("images/menu-icon-gray.png");
+	cursor: pointer;
+}
+.d-ib{
+	display: inline-block;
+	padding-bottom:5px;
+}
+.t-lc{
+	width:200px; display:inline-flex;
+}
+.t-rc{
+	width: 300px; margin-left:10px;
+}
+.backButton{
+	display:block; margin-top:25px; border-radius:5px; cursor: pointer;
+}
+.itemBox{
+	width: 244px; height:390px;text-align:center;border:1px solid silver;border-radius:10px;overflow:hidden;margin:5px 3px 0 0;
+}
+.itemBox-i{
+	background-color:rgba(192,192,192,0.3);border:0px;margin-top:5px;height:75px;padding:5px 0 5px 5px;
+}
+#loading{
+	position: absolute;
+    background-color: rgba(177,177,177,0.2);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    /* margin-left: -0%; */
+    /* margin-top: -45px; */
+    background-image: url(images/loading2.gif);
+    background-size: 300px 300px;
+    background-repeat: no-repeat;
+    background-position: 45% 200px;
+    left:0;
+    top:0;
+}
+.item_gallery{
+	width:35%;
+}
+.item_mainView{
+	width:100%;border:1px solid gray;border-radius:3px;
+}
+.input_s2{
+	border: 1px solid gray;
+    border-radius: 5px;
+    width: 25%;
+}
+.cartIcon{
+	margin-top:10px !important;
+}
+.headerMenuBar ul.category_list{
+	width: 120px;
+}
+.headerMenuBar ul.category_list a{
+	width: 188px;
+	border-radius: 0px !important;
+	border: 3px solid white;
+}
+.adImages{
+	width: 110px !important;
+	height: 110px !important;
+}
+.itemBox_s{
+	width: 170px;
+}
+.animate { transition: transform 0.3s ease-out; }
+.ms-touch.slider {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  
+  -ms-overflow-style: none;
+  /* Hides the scrollbar. */
+  
+  -ms-scroll-chaining: none;
+  /* Prevents Metro from swiping to the next tab or app. */
+  
+  -ms-scroll-snap-type: mandatory;
+  /* Forces a snap scroll behavior on your images. */
+  
+  -ms-scroll-snap-points-x: snapInterval(0%, 100%);
+  /* Defines the y and x intervals to snap to when scrolling. */
+}
+.slider {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+	border:1px solid gray;/*border-radius:10px;*/
+}
+.holder {
+    width: 300%;
+    max-height: 100vw;
+    height: 100%;
+    overflow-y: hidden;
+    z-index: 1 !important;
+}
+.slide-wrapper {
+    width: 33.31%;
+    height: 100%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    color: white;
+    font-size: 2em;
+}
+.slide {
+    height: 100%;
+    position: relative;
+}
+/*.slide:before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background: linear-gradient(transparent, black);
+}*/
+.slide img {
+/*    position: absolute;*/
+    z-index: 0;
+    transform: translatex(-0px);
+    width: 100%;
+    height: 100%;
+    margin-top: 0px !important; 
+}

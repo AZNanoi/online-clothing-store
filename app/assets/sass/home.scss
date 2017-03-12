@@ -1,0 +1,196 @@
+#home{
+    margin-top: 210px;
+
+    #slideShow {
+        width: 99.5%;
+        height: auto;
+        overflow: hidden;
+        border: 1px solid black;
+        padding: 10px 0 10px 0;
+        text-align: center;
+        margin-top: 20px;
+        border-radius: 10px;
+        position: relative;
+
+        >img{width:auto; height:270px;}
+
+        .roundButton{
+            font-size: 50px;
+            border-radius: 50px;
+            width: 100px;
+            height:100px;
+            border:1px solid rgba(177,177,177,0.5);
+            cursor: pointer;
+            margin-top: -18%;
+        }
+
+        @keyframes drawLeft{
+            from {
+                margin-left: -100px;
+            } to {
+                margin-left: -50px;
+              }
+        }
+        @keyframes drawRight{
+            from {
+              margin-right: -100px;
+            } to {
+                margin-right: -50px;
+              }
+        }
+        .leftarrow{
+            margin-left: -50px;
+            padding-left: 40px;
+            animation: 0.5s drawLeft;
+            top: 50%;
+            position: absolute;
+            margin-top: -50px;
+            left: 0;
+        }
+        .rightarrow{
+            margin-right: -50px;
+            padding-right: 40px;
+            animation: 0.5s drawRight;
+            top: 50%;
+            position: absolute;
+            margin-top: -50px;
+            right: 0;
+        }
+    }
+
+    .itemsContent{
+        margin-left: 1%;
+        padding-bottom: 50px;
+        overflow: hidden;
+        .itemBox{
+            display: inline-block;
+            width: 24.2%;
+            height:350px;
+            text-align:center;
+            border:1px solid silver;
+            border-radius:10px;
+            overflow:hidden;
+            margin:5px 3px 0 0;
+
+            .itemBox-i{
+                background-color:rgba(192,192,192,0.3);
+                border:0px;
+                margin-top:5px;
+                height:75px;
+                padding:5px 0 5px 5px;
+
+                .sn_button {
+                    margin-top: 15px;
+                    border-bottom-left-radius: 15px;
+                }
+            }
+
+            img.clothing {
+                width: 244px;
+                max-width: 244px;
+                height: 250px;
+                display: block;
+                margin-top: 10px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        .clothing_item {
+            display: inline-block;
+            float: left;
+        }
+
+    }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@include media-breakpoint-only(xs) {
+    #home{
+        width: 100% !important;
+        .itemsContent{
+            .itemBox {
+                width: 48.4%;
+                height: 230px;
+
+                img.clothing{
+                    width: 100%;
+                    height: 70%;
+                }
+
+                .itemBox-i {
+                    font-size: 0.7em;
+                }
+            }
+        }
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@include media-breakpoint-only(sm) {
+    #home{
+        width: 100% !important;
+        .itemsContent{
+            .itemBox {
+                width: 32.1%;
+                height: 230px;
+
+                img.clothing{
+                    width: 100%;
+                    height: 70%;
+                }
+
+                .itemBox-i {
+                    font-size: 0.7em;
+                }
+            }
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@include media-breakpoint-only(md){
+    #home{
+        width: 100% !important;
+        .itemsContent{
+            .itemBox {
+                width: 24.2%;
+
+                img.clothing{
+                }
+
+                .itemBox-i {
+                }
+            }
+        }
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@include media-breakpoint-between(md, xl) {
+    #home{
+        width: 65%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+// Extra large devices (large desktops, 1600px and up)
+@media (min-width: 1600px) {
+    #home{
+        width: 65%;
+        margin-left: auto;
+        margin-right: auto;
+        .itemsContent {
+            .itemBox {
+                height:450px;
+                img.clothing {
+                    height: 350px;
+                }
+            }
+        }
+        #slideShow>img {
+            width: auto;
+            height: 350px;
+        }
+    }
+}

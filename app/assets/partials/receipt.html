@@ -1,0 +1,25 @@
+<ng-include src="'assets/partials/navbar.html'"></ng-include>
+<div id="receipt" class="mainContainer content center table">
+	<span style="color:green; font-size:26px;">Thank for your order!</span>
+	<a href="/home" class="fr button">Go back to home</a>
+	<h3>Receipt</h3>
+	Order Nr: {{orderNr}}
+	<table>
+		<tr>
+			<th width="250"><span class="fl">Item</span></th>
+			<th width="100"><span class="fl">Price</span></th>
+			<th width="100"><span class="fl">Size</span></th>
+			<th width="100"><span class="fl">Color</span></th>
+			<th width="100"><span class="fl">Amount</span></th>
+		</tr>
+		<tr ng-repeat="item in items">
+			<td>{{item.name}}</td>
+			<td>SEK {{item.price}}</td>
+			<td>{{item.size}}</td>
+			<td>{{item.color}}</td>
+			<td>{{item.amount}}x</td>
+		</tr>
+	</table>
+	</br>
+	<span class="fr">TOTAL: SEK {{totalCost}}</span>
+</div>

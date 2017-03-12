@@ -1,0 +1,110 @@
+#search{
+    margin-bottom: 30px;
+    margin-top: 210px!important;
+    padding-bottom: 50px;
+    width: 80%;
+    left: 50%;
+    margin-left: -40%;
+    position: relative;
+
+    .clothing_item {
+        display: inline-block;
+        float: left;
+    }
+
+    >div{
+        padding-bottom: 30px;
+        overflow: hidden;
+    }
+
+    .itemBox {
+        display: inline-block;
+        width: 24%;
+        text-align: center;
+        border: 1px solid silver;
+        border-radius: 10px;
+        overflow: hidden;
+        margin: 5px 3px 0 0;
+
+        img.clothing{
+            width: 100%;
+            max-width: 244px;
+            height: 60%;
+            display: block;
+            margin-top: 10px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@include media-breakpoint-only(xs) {
+    #search{
+        width: 100%;
+
+        .itemBox {
+            width: 48%;
+
+            img.clothing{
+            }
+        }
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@include media-breakpoint-only(sm) {
+    #search{
+        width: 100%;
+
+        .itemBox {
+            width: 48%;
+
+            img.clothing{
+            }
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@include media-breakpoint-only(md){
+    #search{
+        width: 80%;
+
+        .itemBox {
+            width: 34%;
+
+            img.clothing{
+            }
+        }
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@include media-breakpoint-only(lg) {
+    #search{
+        width: 80%;
+
+        .itemBox {
+            width: 24%;
+
+            img.clothing{
+            }
+        }
+    }
+}
+
+// Extra large devices (large desktops, 1600px and up)
+@include media-breakpoint-only(xl) {
+    #search{
+        width: 80%;
+
+        .itemBox {
+            width: 24%;
+
+            img.clothing{
+            }
+        }
+    }
+}
+

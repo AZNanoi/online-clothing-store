@@ -1,0 +1,25 @@
+<ng-include src="'assets/partials/navbar.html'"></ng-include>
+
+<div id="home">
+	<div class="content">
+		<div id="slideShow" ng-show="displayedSlide" ng-mouseover="showArrows()" ng-mouseleave="hideArrows()">
+			<img id="imgSlideshow" src="assets/images/salesImages/6_-Online-Shop.jpg"/>
+			</br>
+			<button type="button" ng-show="displayedArrows" class="leftarrow roundButton" ng-click="displayPreviousImage()">&#10096;</button>
+			<button type="button" ng-show="displayedArrows" class="rightarrow roundButton" ng-click="displayNextImage()">&#10097;</button>
+		</div>
+
+		</br>
+		<h2>{{categoryName}}</h2>
+		<div ng-repeat="items in category" class="itemsContent">
+			<div class="clothing_item itemBox" ng-repeat="item in items">
+				<a href="/item/{{item.Id}}"><img class="clothing" ng-src="{{item.imageUrl}}"/></a>
+				<div class="itemBox-i">
+					<strong><a href="/item/{{item.Id}}">{{item.Name | shorten}}</a></strong>
+					<a href="/item/{{item.Id}}" class="sn_button button fr">Shop now</a>
+					<h4><a href="/item/{{item.Id}}">{{item.Price}} SEK</a></h4>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

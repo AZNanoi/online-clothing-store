@@ -1,0 +1,23 @@
+#cart{
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+    margin-top: 230px;
+
+    .backButton {
+        display: block;
+        margin-top: 25px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    table{
+        th {
+            background-color: rgb(255, 185, 144);
+            padding: 10px 15px 10px 15px;
+        }
+        td {
+            background-color: rgba(247, 224, 188, 0.32);
+        }
+    }
+}

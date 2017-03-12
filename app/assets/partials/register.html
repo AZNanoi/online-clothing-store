@@ -1,0 +1,80 @@
+<ng-include src="'assets/partials/navbar.html'"></ng-include>
+<div id="register" class="mainContainer content center table">
+	<div id="loading" ng-show="loading"></div>
+	<button class="backButton" ng-click="$back()">Back to previous page</button>
+	<h1>New Account</h1>
+	<span style="color:red;">* Required</span>
+	<form name="myForm" ng-submit="createProfile(myForm)">
+		<table>
+			<tr>
+				<td colspan="2" width="300px"><h3 style="margin-top: 15px; margin-bottom: 0;">Personal details</h3></td>
+			</tr>
+			<tr>
+				<td>First name<span style="color:red;">*</span></td>
+				<td>
+					<input type="text" name="fn" ng-model="fname" required/>
+				</td>
+			</tr>
+			<tr>
+				<td>Last name<span style="color:red;">*</span></td>
+				<td>
+					<input type="text" ng-model="lname" required/>
+				</td>
+			</tr>
+			<tr>
+				<td>Mobile<span style="color:red;">*</span></td>
+				<td>
+					<input type="tel" ng-model="mobile" required/>
+				</td>
+			</tr>
+			<tr>
+				<td>Email<span style="color:red;">*</span></td>
+				<td>
+					<input type="email" ng-model="email" required/>
+				</td>
+			</tr>
+			<tr>
+				<td>Password<span style="color:red;">*</span></td>
+				<td>
+					<input type="password" ng-model="password" required/>
+				</td>
+			</tr>
+			<tr>
+				<td>Confirm Password<span style="color:red;">*</span></td>
+				<td>
+					<input type="password" ng-model="password2" required/>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2"><h3 style="margin-top: 15px; margin-bottom: 0;">Shipping Address</h3></td>
+			</tr>
+			<tr>
+				<td>C/o:</td>
+				<td>
+					<input type="text" ng-model="co"/>
+				</td>
+			</tr>
+			<tr>
+				<td>Street name<span style="color:red;">*</span></td>
+				<td>
+					<input type="text" ng-model="street" required/>
+				</td>
+			</tr>
+			<tr>
+				<td>Postal code<span style="color:red;">*</span></td>
+				<td>
+					<input type="text" ng-model="postalCode" required/>
+				</td>
+			</tr>
+			<tr>
+				<td>City<span style="color:red;">*</span></td>
+				<td>
+					<input type="text" ng-model="city" required/>
+				</td>
+			</tr>
+		</table>
+		<input type="submit" class="button fr" value="Register" style="margin:10px 10px 00" />
+	</form>
+	<span style="color:red;" ng-show="valid">All fields with * must be filled!</span>
+	<span id="error" style="color:red;"></span>
+</div>
